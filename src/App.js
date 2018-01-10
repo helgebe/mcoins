@@ -5,8 +5,8 @@ import './App.css';
 
 //Components
 //import Header from './Header';
-import Footer from './Footer';
-import Coin from './Coin';
+import Footer from './Footer/Footer';
+import Coin from './Coin/Coin';
 
 //todo: replace with list fetched from coinmarketcap at first,
 //then from enriched data in own database which is collected from several sources

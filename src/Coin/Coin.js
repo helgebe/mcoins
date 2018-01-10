@@ -1,20 +1,28 @@
 import React from 'react';
 
-const currencynames = ["bitcoin", "ripple", "litecoin", "ethereum"];
+const currencynames = ["bitcoin", "ripple", "litecoin", "ethereum", "deeponion"];
 
 class Coin extends React.Component {
 render(){
-//!todo: this should be elements, probably divs, in a list, but probably not a list element
+
   return (
-    <div>
-      <ul>
-        {Array.apply(null, Array(currencynames.length)).map(function(item, i){
+    <section>
+
+        {currencynames.map(function(item, i){
           return(
-            <li> {currencynames[i]} {i}</li>
+            <article>
+              <h2>{currencynames[i]}</h2>
+              <div>todo: unless bitcoin then value in bitcoin</div>
+              <a href="">todo: unless bitcoin link to announcement, get it from non existing object</a>
+              <a href="">todo: link to explorer, get it from non existing object</a>
+              <div>hashrate 999 hps</div>
+              <div>algorithm x11</div>
+              <div>price usd 111</div>
+            </article>
           );
+
         }, this )}
-      </ul>
-    </div>
+    </section>
   );
 }
 };
